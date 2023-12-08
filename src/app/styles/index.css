@@ -1,0 +1,15 @@
+@import url("reset.css");
+@import url("variables/global.css");
+@import url("themes/normal.css");
+
+.app {
+    background: var(--bg-color);
+    min-height: 100vh;
+    font: var(--font-m);
+    color: var(--primary-color);
+}
+
+.content-page {
+    display: flex;
+}
+

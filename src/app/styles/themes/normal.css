@@ -1,0 +1,25 @@
+.light {
+    --bg-color: #fff;
+    --inverted-bg-color: #998FC7;
+    --primary-color: #000;
+    --secondary-color: rgb(0 0 0 / 60%);
+    --inverted-primary-color: #fff;
+    --inverted-secondary-color: #049604;
+    --gray-text-color:#6A6A6A;
+    --checkbox-color:#9862F7;
+    --bg-gradient: rgb(179 121 255) linear-gradient(90deg, rgb(179 121 255 / 100%) 0%, rgb(109 39 200 / 100%) 100%)
+
+    /* // skeleton */
+
+    /* --skeleton-color: #fff; */
+
+    /*    --skeleton-shadow: rgba(0 0 0 / 20%); */
+
+    /* // code */
+
+    /* --code-bg: #fff; */
+
+    /* // card */
+
+    /* --card-bg: #d5d5d7; */
+}

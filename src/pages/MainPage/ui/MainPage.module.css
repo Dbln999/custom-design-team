@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.checkboxWrapper {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.checkboxWrapper input {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 2px solid var(--checkbox-color);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    background-color: var(--checkbox-color);
+}
+
+.skipButton {
+    width: 250px;
+    height: 50px;
+    margin-top: 40px;
+}

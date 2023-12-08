@@ -1,0 +1,16 @@
+.imageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 470px;
+    width: 100%;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 400px;
+}
+
+.imageWrapper h1 {
+    font-family: var(--font-family-overlock);
+}

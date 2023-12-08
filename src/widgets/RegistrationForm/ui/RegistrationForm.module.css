@@ -1,0 +1,28 @@
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.inputBox input {
+    padding: 12px;
+}
+
+label {
+    font-family: var(--font-family-inter);
+    font-size: 13px;
+    color: var(--gray-text-color);
+}
+
+button {
+    margin-top: 40px;
+    width: 100%;
+}
+

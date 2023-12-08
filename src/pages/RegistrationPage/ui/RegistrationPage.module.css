@@ -1,0 +1,38 @@
+.RegistrationPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 50px;
+    font-family: var(--font-family-exo);
+    font-weight: bold;
+}
+
+.categoryWrapper {
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+    height: 70px;
+}
+
+.paragraph{
+    font-size: var(--font-size-l);
+    font-family: var(--font-family-nunito);
+    margin: 20px;
+    cursor: pointer;
+}
+
+.paragraph .bold {
+    font-weight: bold;
+}
+
+.divider {
+    width: 1px;
+    height: 100%;
+    background-color: rgb(128 128 128);
+}
+
