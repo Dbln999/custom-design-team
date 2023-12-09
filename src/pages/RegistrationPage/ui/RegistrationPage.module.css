@@ -36,3 +36,9 @@ h1 {
     background-color: rgb(128 128 128);
 }
 
+
+@media only screen and (max-width: 500px) {
+    .categoryWrapper{
+        width: 300px;
+    }
+}

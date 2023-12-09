@@ -30,3 +30,9 @@ label {
     font-size: 18px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 500px) {
+    .inputWrapper{
+        width: 100%;
+    }
+}
