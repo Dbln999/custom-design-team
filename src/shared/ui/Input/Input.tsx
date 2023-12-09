@@ -46,6 +46,7 @@ export const Input = memo((props: InputProps) => {
       ref={ref}
       type={type}
       value={value}
+      placeholder={placeholder}
       onChange={onChangeHandler}
       readOnly={readonly}
       {...otherProps}

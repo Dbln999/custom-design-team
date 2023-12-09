@@ -8,12 +8,18 @@ import {
   ButtonSize,
   ButtonTheme,
 } from "../../../shared/ui/Button/Button.tsx";
+import { useNavigate } from "react-router-dom";
 
 interface RegistrationFormProps {
   className?: string;
 }
 
 export const RegistrationForm = memo(({ className }: RegistrationFormProps) => {
+  const navigate = useNavigate();
+  const onRegister = () => {
+    navigate("/catalog");
+  };
+
   return (
     <section className={classNames(cls.RegistrationForm, {}, [className])}>
       <div className={cls.inputWrapper}>
@@ -30,7 +36,11 @@ export const RegistrationForm = memo(({ className }: RegistrationFormProps) => {
           <Input name="phone" type="phone" />
         </div>
       </div>
-      <Button size={ButtonSize.L} theme={ButtonTheme.BACKGROUND_INVERTED}>
+      <Button
+        size={ButtonSize.L}
+        onClick={onRegister}
+        theme={ButtonTheme.BACKGROUND_INVERTED}
+      >
         Join Us
       </Button>
     </section>

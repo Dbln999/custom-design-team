@@ -1,0 +1,108 @@
+.Modal {
+  width: 50%;
+  height: 550px;
+  background: #fff;
+  position: fixed;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 40px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.wrapper {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.black {
+  background-color: rgb(0 0 0 / 50%);
+  position: fixed;
+  inset: 0;
+}
+
+.priceWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sizeGuide {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.sizeGuide h2, .colors h2{
+  color: #000;
+  font-family: var(--font-family-exo);
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.sizeGuide span {
+  color: rgb(0 0 0 / 60%);
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: var(--font-family-exo);
+}
+
+.sizes {
+  display: flex;
+  align-self: start;
+}
+
+.sizes p {
+  font-family: var(--font-family-exo);
+  font-weight: lighter;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.size {
+  font-weight: lighter;
+}
+
+.tick {
+  position: absolute;
+}
+
+.colors {
+  align-self: start;
+  margin-top: 20px;
+}
+
+.circleWrapper {
+  display: flex;
+  align-self: start;
+  margin-top: 10px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px rgb(0 0 0 / 50%) solid;
+  margin: 0 3px;
+  box-shadow: 2px 2px 2px rgb(0 0 0 / 50%);
+  cursor: pointer;
+}
+
+.inventBtn {
+  width: 240px;
+  height: 56px;
+  background: var(--bg-gradient);
+  border:0;
+  border-radius: 50px;
+  color:white;
+  font-family: var(--font-family-nunito);
+  font-size: 30px;
+  font-weight: lighter;
+  margin-top: 30px;
+}

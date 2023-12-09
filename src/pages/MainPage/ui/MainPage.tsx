@@ -46,17 +46,26 @@ const MainPage = () => {
           <Input
             onChange={() => changeScreenNumber(0)}
             className={cls.checkbox}
-            type="checkbox"
+            value={0}
+            type="radio"
+            checked={screenNumber === 0}
+            name={'welcome'}
           ></Input>
           <Input
             onChange={() => changeScreenNumber(1)}
+            checked={screenNumber === 1}
+            value={1}
             className={cls.checkbox}
-            type="checkbox"
+            type="radio"
+            name={'welcome'}
           ></Input>
           <Input
             onChange={() => changeScreenNumber(2)}
+            checked={screenNumber === 2}
+            value={2}
             className={cls.checkbox}
-            type="checkbox"
+            type="radio"
+            name={'welcome'}
           ></Input>
         </div>
         <div>
