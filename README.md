@@ -1,3 +1,9 @@
+Notion: https://www.notion.so/62d91c40a9f24f88b825092aeb9b8846
+
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
