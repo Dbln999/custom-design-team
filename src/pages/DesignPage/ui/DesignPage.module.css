@@ -67,4 +67,8 @@
         width: 150px;
         height: 150px;
     }
+
+    .tool {
+        margin: 10px;
+    }
 }
