@@ -36,12 +36,8 @@ const DesignPage = memo(({ className }: DesignPageProps) => {
         ></Icon>
       </div>
       <div className={cls.design}>
-        <Icon
-          size={IconSizes.SIZE_XXL}
-          className={cls.tshirt}
-          src={tshirt}
-        ></Icon>
-        <Icon size={IconSizes.SIZE_XL} className={cls.scope} src={scope}></Icon>
+        <Icon className={cls.tshirt} src={tshirt}></Icon>
+        <Icon className={cls.scope} src={scope}></Icon>
       </div>
       <div className={cls.designTools}>
         <Icon className={cls.tool} src={image}></Icon>
