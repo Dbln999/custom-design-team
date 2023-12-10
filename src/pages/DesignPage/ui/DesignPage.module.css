@@ -1,0 +1,51 @@
+.movement {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+.design {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.scope {
+    position: absolute;
+    top:70px
+}
+
+.designTools {
+    width: 100%;
+    padding-bottom: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    flex-wrap: wrap;
+    box-shadow: 4px -5px 3px rgb(0 0 0 / 25%);
+}
+
+.tool {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (width <= 500px) {
+    .tool {
+        width: 80px;
+    }
+}

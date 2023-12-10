@@ -5,7 +5,7 @@ import Icon, { IconSizes } from "../Icon/Icon.tsx";
 import { Product } from "../../../pages/CatalogPage/ui/CatalogPage.tsx";
 import { colors, sizes } from "../../lib/consts.ts";
 import tick from "../../assets/icons/tick.svg";
-
+import { useNavigate } from "react-router-dom";
 interface ModalProps {
   className?: string;
   product: Product;
@@ -15,6 +15,8 @@ interface ModalProps {
 export const Modal = memo(({ className, product, setModal }: ModalProps) => {
   const [sizeIdx, setSizeIdx] = useState<number>(0);
   const [colorIdx, setColorIdx] = useState<number>(0);
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -38,7 +40,7 @@ export const Modal = memo(({ className, product, setModal }: ModalProps) => {
                 style={sizeIdx === index ? { fontWeight: "bold" } : {}}
                 onClick={() => setSizeIdx(index)}
               >
-                {size}
+                {size.toUpperCase()}
               </p>
             ))}
           </div>
@@ -60,7 +62,9 @@ export const Modal = memo(({ className, product, setModal }: ModalProps) => {
               </div>
             ))}
           </div>
-          <button className={cls.inventBtn}>Invent</button>
+          <button onClick={() => navigate("/design")} className={cls.inventBtn}>
+            Invent
+          </button>
         </div>
       </div>
     </>

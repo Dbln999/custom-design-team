@@ -2,6 +2,7 @@ import { RouteProps } from "react-router-dom";
 import { MainPage } from "../../pages/MainPage";
 import { RegistrationPage } from "../../pages/RegistrationPage";
 import { CatalogPage } from "../../pages/CatalogPage";
+import { DesignPage } from "../../pages/DesignPage";
 
 export type AppRoutesProps = RouteProps & {
   authOnly?: boolean;
@@ -11,6 +12,7 @@ export enum AppRoutes {
   MAIN = "main",
   REGISTRATION = "registration",
   CATALOG = "catalog",
+  DESIGN = "design",
   // ABOUT = 'about',
   // PROFILE = 'profile',
   // ARTICLES = 'articles',
@@ -23,6 +25,7 @@ export const RoutePath: Record<AppRoutes, string> = {
   [AppRoutes.MAIN]: "/",
   [AppRoutes.REGISTRATION]: "/registration",
   [AppRoutes.CATALOG]: "/catalog",
+  [AppRoutes.DESIGN]: "/design",
   // [AppRoutes.PROFILE]: '/profile/', // + :id
   // [AppRoutes.ARTICLES]: '/articles',
   // [AppRoutes.ARTICLE_DETAILS]: '/articles/', // + :id
@@ -42,6 +45,10 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
   [AppRoutes.CATALOG]: {
     path: RoutePath.catalog,
     element: <CatalogPage />,
+  },
+  [AppRoutes.DESIGN]: {
+    path: RoutePath.design,
+    element: <DesignPage />,
   },
   // [AppRoutes.ABOUT]: {
   //     path: RoutePath.about,

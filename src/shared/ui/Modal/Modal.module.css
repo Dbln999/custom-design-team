@@ -103,12 +103,13 @@
 .inventBtn {
   width: 240px;
   height: 56px;
-  background: var(--bg-gradient);
   border:0;
   border-radius: 50px;
-  color:white;
+  color: white;
   font-family: var(--font-family-nunito);
   font-size: 30px;
-  font-weight: lighter;
+  font-weight: bold;
+  background: var(--bg-gradient);
   margin-top: 30px;
+  cursor: pointer;
 }

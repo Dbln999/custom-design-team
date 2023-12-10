@@ -50,6 +50,10 @@
     border: none;
 }
 
+.gradient {
+    background: var(--bg-gradient);
+}
+
 .size_m {
     font: var(--font-m);
 }
