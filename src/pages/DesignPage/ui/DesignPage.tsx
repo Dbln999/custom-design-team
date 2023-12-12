@@ -1,4 +1,4 @@
-import { memo } from "react";
+import React, { memo, useState } from "react";
 import cls from "./DesignPage.module.css";
 import { classNames } from "../../../shared/lib/classNames/classNames.ts";
 import Icon, { IconSizes } from "../../../shared/ui/Icon/Icon.tsx";
@@ -20,6 +20,12 @@ interface DesignPageProps {
 const DesignPage = memo(({ className }: DesignPageProps) => {
   const navigate = useNavigate();
 
+  const [print, setPrint] = useState(scope);
+  const handleImage = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPrint(URL.createObjectURL(e.target.files![0]));
+    console.log(print);
+  };
+
   return (
     <div className={classNames(cls.DesignPage, {}, [className])}>
       <div className={cls.movement}>
@@ -37,10 +43,18 @@ const DesignPage = memo(({ className }: DesignPageProps) => {
       </div>
       <div className={cls.design}>
         <Icon className={cls.tshirt} src={tshirt}></Icon>
-        <Icon className={cls.scope} src={scope}></Icon>
+        <Icon className={cls.scope} src={print}></Icon>
       </div>
       <div className={cls.designTools}>
-        <Icon className={cls.tool} src={image}></Icon>
+        <div>
+          <input
+            accept="image/png, image/jpeg, image/jpg"
+            type={"file"}
+            onChange={handleImage}
+            className={cls.file}
+          />
+          <Icon className={cls.tool} src={image}></Icon>
+        </div>
         <Icon className={cls.tool} src={AI}></Icon>
         <Icon className={cls.tool} src={template}></Icon>
         <Icon className={cls.tool} src={text}></Icon>
